@@ -1,6 +1,27 @@
+"use client";
+
+import { useState } from "react";
 import { siteConfig, whatsappLink } from "@/lib/site-config";
 
 export function Contacto() {
+  const [nombre, setNombre] = useState("");
+  const [direccion, setDireccion] = useState("");
+  const [mensaje, setMensaje] = useState("");
+
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+
+    const texto = [
+      "Hola, quiero consultar sobre la administración de mi consorcio.",
+      "",
+      `Nombre: ${nombre}`,
+      `Dirección del consorcio: ${direccion}`,
+      `Mensaje: ${mensaje}`,
+    ].join("\n");
+
+    window.open(whatsappLink(texto), "_blank", "noopener");
+  }
+
   return (
     <section id="contacto" className="bg-hueso px-6 py-22" aria-label="Contacto">
       <div className="mx-auto grid max-w-280 grid-cols-1 gap-14 md:grid-cols-2">
@@ -40,12 +61,7 @@ export function Contacto() {
           </div>
         </div>
 
-        <form
-          action={`mailto:${siteConfig.email}`}
-          method="post"
-          encType="text/plain"
-          className="flex flex-col gap-4"
-        >
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div>
             <label
               htmlFor="nombre"
@@ -58,6 +74,8 @@ export function Contacto() {
               name="Nombre"
               type="text"
               required
+              value={nombre}
+              onChange={(e) => setNombre(e.target.value)}
               className="w-full border border-black/20 bg-white px-3.5 py-3 text-[0.95rem] text-tinta focus-visible:outline-3 focus-visible:outline-sello"
             />
           </div>
@@ -73,6 +91,8 @@ export function Contacto() {
               name="Direccion del consorcio"
               type="text"
               required
+              value={direccion}
+              onChange={(e) => setDireccion(e.target.value)}
               className="w-full border border-black/20 bg-white px-3.5 py-3 text-[0.95rem] text-tinta focus-visible:outline-3 focus-visible:outline-sello"
             />
           </div>
@@ -88,6 +108,8 @@ export function Contacto() {
               name="Mensaje"
               required
               rows={4}
+              value={mensaje}
+              onChange={(e) => setMensaje(e.target.value)}
               className="w-full resize-y border border-black/20 bg-white px-3.5 py-3 text-[0.95rem] text-tinta focus-visible:outline-3 focus-visible:outline-sello"
             />
           </div>
@@ -95,8 +117,11 @@ export function Contacto() {
             type="submit"
             className="self-start bg-forest px-5.5 py-3.75 font-mono text-[0.85rem] tracking-[0.04em] text-white uppercase transition-colors hover:bg-carbon"
           >
-            Enviar consulta
+            Enviar por WhatsApp
           </button>
+          <p className="text-[0.78rem] text-[#5b6655]">
+            Se abre WhatsApp con la consulta ya redactada — solo falta confirmar el envío.
+          </p>
         </form>
       </div>
     </section>
