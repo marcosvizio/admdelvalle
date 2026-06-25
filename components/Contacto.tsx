@@ -2,16 +2,16 @@ import { siteConfig, whatsappLink } from "@/lib/site-config";
 
 export function Contacto() {
   return (
-    <section id="contacto" className="bg-hueso px-6 py-[88px]" aria-label="Contacto">
-      <div className="mx-auto grid max-w-[1120px] grid-cols-1 gap-14 md:grid-cols-2">
+    <section id="contacto" className="bg-hueso px-6 py-22" aria-label="Contacto">
+      <div className="mx-auto grid max-w-280 grid-cols-1 gap-14 md:grid-cols-2">
         <div>
-          <p className="mb-3.5 flex items-center gap-2.5 font-mono text-[0.72rem] tracking-[0.18em] text-forest uppercase before:block before:h-0.5 before:w-[18px] before:bg-forest">
+          <p className="mb-3.5 flex items-center gap-2.5 font-mono text-[0.72rem] tracking-[0.18em] text-forest uppercase before:block before:h-0.5 before:w-4.5 before:bg-forest">
             Hablemos de su consorcio
           </p>
-          <h2 className="mb-[18px] font-display text-[clamp(1.9rem,3.6vw,2.5rem)] font-extrabold uppercase leading-[1.02] text-forest">
+          <h2 className="mb-4.5 font-display text-[clamp(1.9rem,3.6vw,2.5rem)] font-extrabold uppercase leading-[1.02] text-forest">
             Pida una propuesta
           </h2>
-          <p className="mb-[26px] max-w-[440px] text-[#3a4536]">
+          <p className="mb-6.5 max-w-110 text-[#3a4536]">
             Cuéntenos sobre el edificio y nos comunicamos para conversar sobre la
             administración.
           </p>
@@ -23,7 +23,7 @@ export function Contacto() {
               rel="noopener"
               className="flex items-center gap-2.5 border-b border-black/10 py-3.5 font-mono text-[0.95rem] text-carbon transition-colors hover:text-forest"
             >
-              <span className="text-[0.66rem] tracking-[0.1em] text-sello uppercase">
+              <span className="text-[0.66rem] tracking-widest text-sello uppercase">
                 WhatsApp
               </span>{" "}
               · {siteConfig.whatsappDisplay}
@@ -32,7 +32,7 @@ export function Contacto() {
               href={`mailto:${siteConfig.email}`}
               className="flex items-center gap-2.5 border-b border-black/10 py-3.5 font-mono text-[0.95rem] text-carbon transition-colors hover:text-forest"
             >
-              <span className="text-[0.66rem] tracking-[0.1em] text-sello uppercase">
+              <span className="text-[0.66rem] tracking-widest text-sello uppercase">
                 Email
               </span>{" "}
               · {siteConfig.email}
@@ -93,7 +93,7 @@ export function Contacto() {
           </div>
           <button
             type="submit"
-            className="self-start bg-forest px-[22px] py-[15px] font-mono text-[0.85rem] tracking-[0.04em] text-white uppercase transition-colors hover:bg-carbon"
+            className="self-start bg-forest px-5.5 py-3.75 font-mono text-[0.85rem] tracking-[0.04em] text-white uppercase transition-colors hover:bg-carbon"
           >
             Enviar consulta
           </button>

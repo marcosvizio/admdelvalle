@@ -2,8 +2,8 @@ import { siteConfig } from "@/lib/site-config";
 
 export function Footer() {
   return (
-    <footer className="bg-carbon px-6 py-[34px] text-[#9aa394]">
-      <div className="mx-auto flex max-w-[1120px] flex-wrap items-center justify-between gap-3 font-mono text-[0.76rem] tracking-[0.03em]">
+    <footer className="bg-carbon px-6 py-8.5 text-[#9aa394]">
+      <div className="mx-auto flex max-w-280 flex-wrap items-center justify-between gap-3 font-mono text-[0.76rem] tracking-[0.03em]">
         <span>
           <strong className="text-sage">{siteConfig.shortName}</strong> —{" "}
           {siteConfig.name}

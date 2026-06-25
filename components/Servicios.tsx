@@ -2,10 +2,10 @@ import { siteConfig } from "@/lib/site-config";
 
 export function Servicios() {
   return (
-    <section id="servicios" className="bg-hueso px-6 py-[88px]" aria-label="Servicios">
-      <div className="mx-auto max-w-[1120px]">
-        <div className="mb-12 max-w-[640px]">
-          <p className="mb-3.5 flex items-center gap-2.5 font-mono text-[0.72rem] tracking-[0.18em] text-forest uppercase before:block before:h-0.5 before:w-[18px] before:bg-forest">
+    <section id="servicios" className="bg-hueso px-6 py-22" aria-label="Servicios">
+      <div className="mx-auto max-w-280">
+        <div className="mb-12 max-w-160">
+          <p className="mb-3.5 flex items-center gap-2.5 font-mono text-[0.72rem] tracking-[0.18em] text-forest uppercase before:block before:h-0.5 before:w-4.5 before:bg-forest">
             Lo que hacemos
           </p>
           <h2 className="font-display text-[clamp(2rem,4vw,2.8rem)] font-extrabold uppercase leading-[1.02] text-forest">
@@ -23,7 +23,7 @@ export function Servicios() {
               key={s.numero}
               className="bg-hueso p-8 transition-colors hover:bg-[#EAE6D6]"
             >
-              <span className="font-mono text-[0.75rem] tracking-[0.1em] text-sello">
+              <span className="font-mono text-[0.75rem] tracking-widest text-sello">
                 {s.numero}
               </span>
               <h3 className="mt-3.5 mb-3 font-display text-[1.3rem] font-extrabold text-carbon">

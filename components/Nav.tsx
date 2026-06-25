@@ -14,7 +14,7 @@ export function Nav() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-black/10 bg-hueso">
-      <div className="mx-auto flex max-w-[1120px] items-center justify-between px-6 py-3">
+      <div className="mx-auto flex max-w-280 items-center justify-between px-6 py-3">
         <a href="#top" className="flex items-center gap-3">
           <Image
             src="/brand/adv-logo-compacto.svg"
@@ -55,7 +55,7 @@ export function Nav() {
           ))}
           <a
             href="#contacto"
-            className="bg-forest px-[18px] py-2.5 font-mono text-[0.78rem] tracking-[0.03em] text-white uppercase transition-colors hover:bg-carbon"
+            className="bg-forest px-4.5 py-2.5 font-mono text-[0.78rem] tracking-[0.03em] text-white uppercase transition-colors hover:bg-carbon"
           >
             Contactar
           </a>
