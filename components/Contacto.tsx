@@ -115,13 +115,10 @@ export function Contacto() {
           </div>
           <button
             type="submit"
-            className="self-start bg-forest px-5.5 py-3.75 font-mono text-[0.85rem] tracking-[0.04em] text-white uppercase transition-colors hover:bg-carbon"
+            className="self-start bg-forest px-5.5 py-3.75 font-mono text-[0.85rem] tracking-[0.04em] text-white uppercase transition-colors hover:bg-carbon hover:cursor-pointer"
           >
             Enviar por WhatsApp
           </button>
-          <p className="text-[0.78rem] text-[#5b6655]">
-            Se abre WhatsApp con la consulta ya redactada — solo falta confirmar el envío.
-          </p>
         </form>
       </div>
     </section>
