@@ -1,9 +1,5 @@
 /**
  * Datos del negocio, centralizados en un solo lugar.
- *
- * ANTES DE PUBLICAR, reemplazar (buscar "COMPLETAR"):
- *  - whatsapp / whatsappDisplay: número real
- *  - email: dirección real de contacto
  */
 export const siteConfig = {
   name: "Administración del Valle",
@@ -11,10 +7,10 @@ export const siteConfig = {
   tagline: "Administración de consorcios en CABA",
   administrator: "Walter Carrizo",
 
-  whatsapp: "5491173685981", // COMPLETAR: código de país + área + número, sin espacios ni signos
-  whatsappDisplay: "+54 9 11 7368-5981", // COMPLETAR
+  whatsapp: "5491173685981",
+  whatsappDisplay: "+54 9 11 7368-5981",
 
-  email: "admdelvalle.wc@gmail.com", // COMPLETAR
+  email: "admdelvalle.wc@gmail.com",
 
   address: {
     street: "Avenida Francisco Beiró 3316",

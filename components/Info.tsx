@@ -6,12 +6,12 @@ export function Info() {
   return (
     <section
       id="horarios"
-      className="bg-carbon px-6 py-[88px] text-white"
+      className="bg-carbon px-6 py-22 text-white"
       aria-label="Horarios y ubicación"
     >
-      <div className="mx-auto grid max-w-[1120px] grid-cols-1 gap-14 md:grid-cols-2">
+      <div className="mx-auto grid max-w-280 grid-cols-1 gap-14 md:grid-cols-2">
         <div>
-          <p className="mb-3.5 flex items-center gap-2.5 font-mono text-[0.72rem] tracking-[0.18em] text-sage uppercase before:block before:h-0.5 before:w-[18px] before:bg-sage">
+          <p className="mb-3.5 flex items-center gap-2.5 font-mono text-[0.72rem] tracking-[0.18em] text-sage uppercase before:block before:h-0.5 before:w-4.5 before:bg-sage">
             Atención
           </p>
           <h2 className="mb-7 font-display text-[clamp(1.8rem,3.4vw,2.3rem)] font-extrabold uppercase leading-[1.02] text-white">
@@ -36,7 +36,7 @@ export function Info() {
         </div>
 
         <div>
-          <p className="mb-3.5 flex items-center gap-2.5 font-mono text-[0.72rem] tracking-[0.18em] text-sage uppercase before:block before:h-0.5 before:w-[18px] before:bg-sage">
+          <p className="mb-3.5 flex items-center gap-2.5 font-mono text-[0.72rem] tracking-[0.18em] text-sage uppercase before:block before:h-0.5 before:w-4.5 before:bg-sage">
             Dónde estamos
           </p>
           <h2 className="mb-7 font-display text-[clamp(1.8rem,3.4vw,2.3rem)] font-extrabold uppercase leading-[1.02] text-white">
@@ -50,7 +50,7 @@ export function Info() {
             {siteConfig.address.country}
           </address>
           <iframe
-            className="h-[220px] w-full border border-white/20 [filter:grayscale(0.2)_contrast(1.05)]"
+            className="h-55 w-full border border-white/20 filter-[grayscale(0.2)_contrast(1.05)]"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             src={`https://www.google.com/maps?q=${mapQuery}&output=embed`}

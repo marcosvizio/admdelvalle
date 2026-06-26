@@ -25,7 +25,7 @@ export function SkylineDivider() {
 
   return (
     <svg
-      className="block h-[90px] w-full"
+      className="block h-22.5 w-full"
       viewBox="0 0 1120 90"
       preserveAspectRatio="none"
       aria-hidden="true"

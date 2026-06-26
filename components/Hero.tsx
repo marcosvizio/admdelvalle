@@ -5,22 +5,22 @@ import { SkylineDivider } from "./SkylineDivider";
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-carbon pt-24 text-white" aria-label="Presentación">
-      <div className="mx-auto grid max-w-[1120px] grid-cols-1 items-center gap-8 px-6 pb-[60px] md:grid-cols-[1.3fr_0.9fr]">
+      <div className="mx-auto grid max-w-280 grid-cols-1 items-center gap-8 px-6 pb-15 md:grid-cols-[1.3fr_0.9fr]">
         <div>
-          <p className="mb-3.5 flex items-center gap-2.5 font-mono text-[0.72rem] tracking-[0.18em] text-sage uppercase before:block before:h-0.5 before:w-[18px] before:bg-sage">
+          <p className="mb-3.5 flex items-center gap-2.5 font-mono text-[0.72rem] tracking-[0.18em] text-sage uppercase before:block before:h-0.5 before:w-4.5 before:bg-sage">
             Administración de consorcios · CABA
           </p>
           <h1 className="font-display text-[clamp(2.6rem,5.6vw,4.4rem)] font-extrabold uppercase leading-[1.02]">
-            Su consorcio,
+            Administración de Consorcios
             <br />
-            en orden,
-            <br />
-            <span className="text-sage">sin sorpresas.</span>
+            <span className="text-sage italic">
+              En orden,
+              <br/>
+              sin sorpresas.
+              </span>
           </h1>
-          <p className="mt-6 mb-8 max-w-[520px] text-[1.08rem] text-[#D9DECF]">
-            Liquidación de expensas, pago a proveedores y toda la documentación del
-            edificio, llevada con trato directo por un administrador, no por un call
-            center.
+          <p className="mt-6 mb-8 max-w-130 text-[1.08rem] text-[#D9DECF]">
+            Ofrecemos liquidación de expensas, pago a proveedores, toda la documentación y gestión de edificios, servicios integrales y soluciones completas para su consorcio. Todos estos servicios en un trato directo con su administrador.
           </p>
           <div className="flex flex-wrap gap-3.5">
             <a
@@ -42,10 +42,10 @@ export function Hero() {
           </div>
         </div>
 
-        <Sello line1="Consorcios" line2="en CABA" tone="light" />
+        <Sello line1="Administración" line2="de Consorcios" tone="light" />
       </div>
 
-      <SkylineDivider />
+      <SkylineDivider/>      
     </section>
   );
 }
