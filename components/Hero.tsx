@@ -11,16 +11,16 @@ export function Hero() {
             Administración de consorcios · CABA
           </p>
           <h1 className="font-display text-[clamp(2.6rem,5.6vw,4.4rem)] font-extrabold uppercase leading-[1.02]">
-            Su consorcio,
+            Administración de Consorcios
             <br />
-            en orden,
-            <br />
-            <span className="text-sage">sin sorpresas.</span>
+            <span className="text-sage italic">
+              En orden,
+              <br/>
+              sin sorpresas.
+              </span>
           </h1>
           <p className="mt-6 mb-8 max-w-130 text-[1.08rem] text-[#D9DECF]">
-            Liquidación de expensas, pago a proveedores y toda la documentación del
-            edificio, llevada con trato directo por un administrador, no por un call
-            center.
+            Ofrecemos liquidación de expensas, pago a proveedores, toda la documentación y gestión de edificios, servicios integrales y soluciones completas para su consorcio. Todos estos servicios en un trato directo con su administrador.
           </p>
           <div className="flex flex-wrap gap-3.5">
             <a
@@ -42,10 +42,10 @@ export function Hero() {
           </div>
         </div>
 
-        <Sello line1="Consorcios" line2="en CABA" tone="light" />
+        <Sello line1="Administración" line2="de Consorcios" tone="light" />
       </div>
 
-      <SkylineDivider />
+      <SkylineDivider/>      
     </section>
   );
 }

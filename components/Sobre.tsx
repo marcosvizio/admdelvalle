@@ -5,11 +5,11 @@ export function Sobre() {
   return (
     <section
       id="nosotros"
-      className="bg-white px-6 py-22"
+      className="bg-hueso px-6 py-22"
       aria-label="Sobre el administrador"
     >
       <div className="mx-auto grid max-w-280 grid-cols-1 items-center gap-14 md:grid-cols-[0.85fr_1.15fr]">
-        <div className="order-2 border border-black/10 bg-hueso p-9 md:order-1">
+        <div className="order-2 border border-black/10 bg-white p-9 md:order-1">
           <div className="mb-5.5">
             <Sello line1="Atención" line2="directa" tone="dark" />
           </div>
@@ -28,7 +28,7 @@ export function Sobre() {
           </h2>
           <p className="mb-4 text-[1.02rem] text-[#33402e]">
             Administración del Valle (ADV) es un emprendimiento dedicado a la
-            administración de consorcios en Buenos Aires. El sr. Walter Carrizo está a cargo
+            administración de consorcios en Buenos Aires. El Sr. Walter Carrizo está a cargo
             de la administración del día a día de cada edificio.
           </p>
           <p className="text-[1.02rem] text-[#33402e]">

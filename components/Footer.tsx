@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
 export function Footer() {
@@ -11,6 +12,9 @@ export function Footer() {
         <span>
           {siteConfig.address.street}, CABA · Lun a Vie 10:00–16:00
         </span>
+        <Link href="/politica-de-privacidad" className="underline hover:text-sage">
+          Política de Privacidad
+        </Link>
       </div>
     </footer>
   );
