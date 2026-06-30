@@ -1,4 +1,14 @@
-# Administración del Valle (ADV) — sitio en Next.js
+ Last Modification Date: 2026-06-30 17:02:54
+
+ Author: Sam
+ Email: Sam@example.com
+
+ Creation Date: 2026-06-30 17:02:23
+ Last Modification Date: 2026-06-30 17:02:23
+
+ Another File Header is a Visual Studio Code extension to automatically or by command insert a header to your files.
+
+*/# Administración del Valle (ADV) — sitio en Next.js
 
 Landing page de ADV, migrada a Next.js (App Router + TypeScript + Tailwind CSS v4),
 pensada para SEO y carga rápida: todo el sitio se genera como HTML estático en el
