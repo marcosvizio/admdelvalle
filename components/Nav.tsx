@@ -27,9 +27,9 @@ export function Nav() {
             priority
           />
           <span className="font-display text-[1.1rem] font-extrabold tracking-[0.03em] text-forest uppercase">
-            Administración Del Valle
-            <span className="block font-mono text-[0.9rem] font-normal tracking-[0.12em] text-tinta uppercase">
-              Gestión de consorcios
+            Administración
+            <span className="block font-mono text-[0.55rem] font-normal tracking-[0.12em] text-tinta uppercase">
+              del Valle
             </span>
           </span>
         </Link>
@@ -56,6 +56,12 @@ export function Nav() {
             </Link>
           ))}
           <Link
+            href="/sus-expensas"
+            className="border-b-2 border-transparent pb-1 font-mono text-[0.8rem] tracking-[0.04em] uppercase text-sello transition-colors hover:border-sello"
+          >
+            Sus Expensas
+          </Link>
+          <Link
             href="/#contacto"
             className="bg-forest px-4.5 py-2.5 font-mono text-[0.78rem] tracking-[0.03em] text-white uppercase transition-colors hover:bg-carbon"
           >
@@ -76,6 +82,13 @@ export function Nav() {
               {l.label}
             </Link>
           ))}
+          <Link
+            href="/sus-expensas"
+            onClick={() => setOpen(false)}
+            className="border-b border-black/5 px-6 py-4 font-mono text-sm uppercase text-sello"
+          >
+            Sus Expensas
+          </Link>
           <Link
             href="/#contacto"
             onClick={() => setOpen(false)}
