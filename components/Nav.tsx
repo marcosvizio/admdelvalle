@@ -28,7 +28,7 @@ export function Nav() {
           />
           <span className="font-display text-[1.1rem] font-extrabold tracking-[0.03em] text-forest uppercase">
             Administración
-            <span className="block font-mono text-[0.55rem] font-normal tracking-[0.12em] text-tinta uppercase">
+            <span className="block text-[1rem] font-extrabold tracking-[0.12em] text-forest uppercase">
               del Valle
             </span>
           </span>
