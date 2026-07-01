@@ -1,12 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "admdelvalle",
-  "compatibility_date": "2026-06-26",
-  "assets": {
-    "directory": "./out",
-    "not_found_handling": "404-page"
-  }
-=======
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "admdelvalle",
 	"main": ".open-next/worker.js",
@@ -39,5 +31,4 @@
 	"observability": {
 		"enabled": true
 	}
->>>>>>> develop
 }
