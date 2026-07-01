@@ -1,3 +1,3 @@
-export default {
-// Podés dejarlo vacío por ahora
-};
+const config = {};
+
+export default config;
