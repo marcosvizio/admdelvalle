@@ -1,34 +1,30 @@
 {
-	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "admdelvalle",
-	"main": ".open-next/worker.js",
-	"compatibility_date": "2026-06-26",
-	"compatibility_flags": [
-		"nodejs_compat"
-	],
-	"assets": {
-		"directory": ".open-next/assets",
-		"binding": "ASSETS"
-	},
-	// KV: guarda los datos de cada consorcio (nombre, clave hasheada,
-	// listado de archivos). Crear con:
-	//   npx wrangler kv namespace create CONSORCIOS_KV
-	// y reemplazar el "id" de abajo por el que te devuelva ese comando.
-	"kv_namespaces": [
-		{
-			"binding": "CONSORCIOS_KV",
-			"id": "ba91f9a2be024125bdeef9942f342c8f"
-		}
-	],
-	// R2: guarda los PDFs de las liquidaciones. Crear con:
-	//   npx wrangler r2 bucket create adv-expensas
-	"r2_buckets": [
-		{
-			"binding": "EXPENSAS_BUCKET",
-			"bucket_name": "adv-expensas"
-		}
-	],
-	"observability": {
-		"enabled": true
-	}
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "admdelvalle",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-06-26",
+  "compatibility_flags": ["nodejs_compat"],
+
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+
+  "kv_namespaces": [
+    {
+      "binding": "CONSORCIOS_KV",
+      "id": "ba91f9a2be024125bdeef9942f342c8f"
+    }
+  ],
+
+  "r2_buckets": [
+    {
+      "binding": "EXPENSAS_BUCKET",
+      "bucket_name": "adv-expensas"
+    }
+  ],
+
+  "observability": {
+    "enabled": true
+  }
 }
